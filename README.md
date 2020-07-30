@@ -20,6 +20,9 @@ environment.plugins.prepend(
 
 module.exports = environment
 ```
+
+> A big problem I ran into was how to correctly import Bootstrap's styles. I intially created `app/javascript/packs/application.scss` and imported the styles in that file. However, that seemed to break my build in a way that made it so `app/javascript/packs/application.js` never compiled. Next, I renamed `app/assets/stylesheets/application.css` to `app/assets/stylesheets/application.scss`, and  imported the styles into that file. That worked, but it meant that the Asset Pipeline was resposnible for my styles. This isn't necesarily a bad thing, but I wanted Webpacker to be responsible for all of my front-end code.    
+
 4. `mkdir app/javascript/stylesheets`
 5. `touch app/javascript/stylesheets/application.scss`
 6. Import Bootstrap Styles
@@ -27,7 +30,7 @@ module.exports = environment
 ```scss
 // app/javascript/stylesheets/application.scss
 @import '~bootstrap/scss/bootstrap'
-```
+``` 
 
 7. Import Bootstrap, load styles, and enable [Tooltips](https://getbootstrap.com/docs/4.5/components/tooltips/#example-enable-tooltips-everywhere) and [Popovers](https://getbootstrap.com/docs/4.5/components/popovers/#example-enable-popovers-everywhere)
 
