@@ -20,3 +20,6 @@ environment.plugins.prepend(
 
 module.exports = environment
 ```
+
+4. `mkdir app/javascript/stylesheets`
+5. `touch app/javascript/stylesheets/application.scss`
