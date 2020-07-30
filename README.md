@@ -41,3 +41,25 @@ $(function () {
     $('[data-toggle="popover"]').popover()
 })
 ```
+
+8. Add [Responsive meta tag](https://getbootstrap.com/docs/4.5/getting-started/introduction/#responsive-meta-tag)
+
+```erb
+<%# app/views/layouts/application.html.erb %>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RailsBootstrap</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= yield %>
+  </body>
+</html>
+```
