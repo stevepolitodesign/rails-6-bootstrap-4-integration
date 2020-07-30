@@ -89,7 +89,7 @@ If you change `extract_css: false` to `extract_css: true` under the `default:` b
 
 ```
 
-10. Finally, add [Responsive meta tag](https://getbootstrap.com/docs/4.5/getting-started/introduction/#responsive-meta-tag)
+9. Finally, add the [responsive meta tag](https://getbootstrap.com/docs/4.5/getting-started/introduction/#responsive-meta-tag)
 
 ```erb{8}
 <%# app/views/layouts/application.html.erb %>
