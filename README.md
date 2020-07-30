@@ -20,6 +20,11 @@ environment.plugins.prepend(
 
 module.exports = environment
 ```
-
 4. `mkdir app/javascript/stylesheets`
 5. `touch app/javascript/stylesheets/application.scss`
+6. Import Bootstrap Sass
+
+```scss
+// app/javascript/stylesheets/application.scss
+@import '~bootstrap/scss/bootstrap'
+```
