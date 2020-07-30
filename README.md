@@ -31,7 +31,7 @@ module.exports = environment
 
 7. Import Bootstrap, load styles, and enable [Tooltips](https://getbootstrap.com/docs/4.5/components/tooltips/#example-enable-tooltips-everywhere) and [Popovers](https://getbootstrap.com/docs/4.5/components/popovers/#example-enable-popovers-everywhere)
 
-```
+```js
 // app/javascript/packs/application.js
 ...
 require("bootstrap")
